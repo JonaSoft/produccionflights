@@ -20,7 +20,7 @@ app.use(bodyParser.json())
 
 
 // conexion a mongoDB
-mongoose.connect('mongodb+srv://jonasoft:+Car041296+@cluster0-bw4ak.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://jonasoft:Yi8FBQscLZPF5MmW@cluster0-bw4ak.mongodb.net/test?retryWrites=true&w=majority', {
         useNewUrlParser: true,
         useCreateIndex: true,
         useUnifiedTopology: true

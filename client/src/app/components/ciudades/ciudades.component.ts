@@ -25,8 +25,8 @@ export class CiudadesComponent implements OnInit {
     this.paises.mostrarDataPaises()
     .subscribe((res)=>{
       console.log(res);
-      for(let i in res['paises']){
-        this.data.push(res['paises'][i])
+      for(let i in res){
+        this.data.push(res[i])
       }
       console.log(this.data)
     })
@@ -39,22 +39,22 @@ export class CiudadesComponent implements OnInit {
     this.ciudades.mostrarDataCiudades()
     .subscribe(res=>{
 
-      for(let i in res['ciudades']){
+      for(let i in res){
         
         
         //busca por code ciudad
-        if (this.valor === res['ciudades'][i].codeciudad) {
+        if (this.valor === res[i].codeciudad) {
           console.log(this.valor);
-          this.dataciudades.push(res['ciudades'][i]);
-         this.searchPaises(res['ciudades'][i].codepais)
+          this.dataciudades.push(res[i]);
+         this.searchPaises(res[i].codepais)
          this.encontro= true
         }
         // busca por nombre de ciudad
-        if (this.valor === res['ciudades'][i].nombreciudad){
+        if (this.valor === res[i].nombreciudad){
           console.log('paso ciudad por nombre');
-          this.dataciudades.push(res['ciudades'][i]);
+          this.dataciudades.push(res[i]);
           console.log(this.dataciudades)
-          this.searchPaises(res['ciudades'][i].codepais)
+          this.searchPaises(res[i].codepais)
           this.encontro= true
         } /*else{
           console.log('error');
