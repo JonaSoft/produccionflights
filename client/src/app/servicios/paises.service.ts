@@ -5,8 +5,8 @@ import { HttpClient } from  '@angular/common/http'
 })
 export class PaisesService {
   
-  URL_PAIS = 'http://localhost:3000/flights/paises';
-  URL_CIUDADES = 'http://localhost:3000/flights/ciudades'
+  URL_PAIS = '/flights/paises';
+  URL_CIUDADES = '/flights/ciudades'
 
   constructor(private httpPais:HttpClient,
               private httpCiudades:HttpClient) { 
