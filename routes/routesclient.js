@@ -345,8 +345,8 @@ app.post('/flights', async(req, res) => {
             ok: true,
             flight: flightDB
         });
-        M
-    })
+
+    });
 });
 
 //buscar un flight
