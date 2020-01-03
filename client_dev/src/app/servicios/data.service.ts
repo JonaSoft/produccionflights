@@ -20,7 +20,7 @@ export class DataService {
   peticion:any;
 
 
-  URL_API = 'mongodb+srv://jonasoft:Yi8FBQscLZPF5MmW@cluster0-bw4ak.mongodb.net/test?retryWrites=true&w=majority/flights';
+  URL_API = '/flights';
  
   constructor(private http:HttpClient) {
     this.selectedFlight = new Flights()
