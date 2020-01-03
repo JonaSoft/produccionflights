@@ -123,7 +123,7 @@ export class SearchComponent implements OnInit {
   seeFlight (cliente:any){
     console.log(cliente);
     this.dataService.mostrarFlight(cliente)
-    window.open(`http://localhost:3000/flights/img/${cliente}`, "","directories=yes, location=yes, menubar=no, scrollbars=yes, statusbar=no, tittlebar=no, width=950, height=650"); 
+    window.open(`mongodb+srv://jonasoft:Yi8FBQscLZPF5MmW@cluster0-bw4ak.mongodb.net/test?retryWrites=true&w=majority/flights/img/${cliente}`, "","directories=yes, location=yes, menubar=no, scrollbars=yes, statusbar=no, tittlebar=no, width=950, height=650"); 
     return
   }
   buscaWeb(clientes:any){
