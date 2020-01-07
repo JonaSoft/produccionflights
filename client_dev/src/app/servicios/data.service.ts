@@ -20,7 +20,7 @@ export class DataService {
   peticion:any;
 
 
-  URL_API = '/flights';
+  URL_API = 'flights';
  
   constructor(private http:HttpClient) {
     this.selectedFlight = new Flights()
