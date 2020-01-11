@@ -6,7 +6,8 @@ html {
 
 .fondo {
     background-color: #848484;
-    height: 1250px;
+    min-height: 1250px;
+    height: auto;
     margin-top: -200px;
 }
 
